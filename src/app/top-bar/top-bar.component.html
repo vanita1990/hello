@@ -1,0 +1,12 @@
+
+<a [routerLink]="['/']">
+    <h1>My Store</h1>
+</a>
+
+<!--<a [routerLink]="['/cart']" class="button fancy-button">
+    Checkout<span class="badge">5</span>     
+</a>-->
+<ul class="nav navbar-nav navbar-right">
+    <li><a [routerLink]="['/cart']">
+      <span matBadge="{{cartService.getItems().length}}" matBadgeOverlap="false"><i class="material-icons">shopping_cart</i></span>
+ </a></li></ul>
